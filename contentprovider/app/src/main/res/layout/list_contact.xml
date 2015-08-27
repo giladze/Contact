@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/image_contact"
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:contentDescription="Contact Image"/>
+
+    <LinearLayout
+        android:id="@+id/ll_checkbox"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true">
+
+        <CheckBox
+            android:id="@+id/checkbox_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image_contact"
+        android:layout_toLeftOf="@id/ll_checkbox"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contact_name"
+        android:layout_toRightOf="@+id/image_contact"
+        android:layout_toLeftOf="@id/ll_checkbox"
+        android:paddingLeft="25dp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone"
+        android:layout_toRightOf="@+id/image_contact"
+        android:layout_toLeftOf="@id/ll_checkbox"
+        android:paddingLeft="25dp"
+        android:singleLine="true"/>
+
+</RelativeLayout>
